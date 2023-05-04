@@ -1,0 +1,64 @@
+<section class="login__container">
+  <div class="login__card">
+    <div class="login__title-text">
+      <div class="card-title">Login</div>
+      <div class="card-text">Bem-vindo ao RevendR</div>
+    </div>
+    <section class="login__form-container">
+      <form class="login__form">
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/company.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Código da Empresa"
+            name="company"
+            type="number"
+            [formControl]="loginForm.controls['company']"
+          />
+        </div>
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/email.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="E-mail"
+            name="email"
+            type="email"
+            [formControl]="loginForm.controls['email']"
+          />
+        </div>
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/pass.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Senha"
+            name="password"
+            type="password"
+            [formControl]="loginForm.controls['password']"
+          />
+        </div>
+        <div class="forgot-pass"><span class="reset-pass">Esqueceu sua senha?</span></div>
+        <div class="login__action-form">
+          <button
+            class="button-form"
+            color="primary"
+            type="button"
+            mat-raised-button
+            [disabled]="loginForm.invalid"
+            (click)="onSubmit()"
+          >
+            Entrar
+          </button>
+        </div>
+      </form>
+    </section>
+    <div class="error__container">
+      <p class="error-msg" color="warn" *ngIf="error">
+        Código da empresa, Usuário e / ou senha não conferem, por favor insira novamente.
+      </p>
+    </div>
+    <div class="login__signup">
+      <span class="login__card-subtext"> Não possui cadastro?</span>
+      <span class="card-link" (click)="toSignup()">Cadastre-se</span>
+    </div>
+  </div>
+</section>

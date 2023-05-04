@@ -1,0 +1,86 @@
+<section class="signup__container">
+  <div class="signup__card">
+    <div class="signup__title-text">
+      <div class="card-title">Cadastro</div>
+      <div class="card-text">
+        Insira as informações abaixo, para finalizar seu cadastro
+      </div>
+    </div>
+    <section class="signup__form-container">
+      <form class="signup__form">
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/company.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Código da Empresa"
+            name="company"
+            type="number"
+            [formControl]="signupForm.controls['company']"
+          />
+        </div>
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/user.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Nome"
+            name="fname"
+            type="text"
+            [formControl]="signupForm.controls['fname']"
+          />
+        </div>
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/user.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Sobrenome"
+            name="lname"
+            type="text"
+            [formControl]="signupForm.controls['lname']"
+          />
+        </div>
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/user.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Email"
+            name="lname"
+            type="email"
+            [formControl]="signupForm.controls['email']"
+          />
+        </div>
+        <div class="input-container">
+          <i><img src="../../../../../assets/icons/pass.svg" alt="" /></i>
+          <input
+            class="input-field"
+            placeholder="Senha"
+            name="password"
+            type="password"
+            [formControl]="signupForm.controls['password']"
+          />
+        </div>
+        <div class="signup__action-form">
+          <button
+            class="button-form"
+            color="accent"
+            type="button"
+            mat-raised-button
+            [disabled]="signupForm.invalid"
+            (click)="onSubmit()"
+          >
+            Cadastrar
+          </button>
+        </div>
+      </form>
+    </section>
+    <div class="error__container">
+      <p class="error-msg" color="warn" *ngIf="error">
+        Código da empresa informado não existe, ou está inativo, tente novamente
+        ou entre em contato com o suporte.
+      </p>
+    </div>
+    <div class="signup__signup">
+      <span class="signup__card-subtext"> Já possui conta?</span>
+      <span class="card-link" (click)="toLogin()">Entrar</span>
+    </div>
+  </div>
+</section>
