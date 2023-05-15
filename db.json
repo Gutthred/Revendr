@@ -1,0 +1,241 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "Fabio",
+      "lName": "Silva",
+      "user": "fsilva",
+      "email": "fabio@fabio.com",
+      "password": "fabio123",
+      "company": 1992
+    },
+    {
+      "id": 2,
+      "fname": "Admin",
+      "lName": "Administrator",
+      "user": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "company": 1992
+    }
+  ],
+  "companies": [
+    {
+      "id": 1992,
+      "isActive": true
+    },
+    {
+      "id": 9999,
+      "isActive": false
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "#1000",
+      "make": "bmw",
+      "model": "x1",
+      "fmodel": "X1 2.0 Turbo Active Flex XDRIVE25i Sport 4",
+      "year": "2021",
+      "color": "Cinza",
+      "kilometers": 49421,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 249750,
+      "cost": 200000,
+      "isPromoted": true,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230406/bmw-x1-2.0-16v-turbo-activeflex-xdrive25i-sport-4p-automatico-wmimagem19354721143.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230406/bmw-x1-2.0-16v-turbo-activeflex-xdrive25i-sport-4p-automatico-wmimagem19354687339.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230406/bmw-x1-2.0-16v-turbo-activeflex-xdrive25i-sport-4p-automatico-wmimagem19354750941.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1001",
+      "make": "volvo",
+      "model": "c40",
+      "fmodel": "C40 P8 Recharge Pure Eletric AWD",
+      "year": "2022",
+      "color": "Azul",
+      "kilometers": 9220,
+      "gearbox": "Automático",
+      "fuel": ["Eletrico"],
+      "price": 379000,
+      "cost": 350750,
+      "isPromoted": true,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230502/volvo-c40-p8-recharge-pure-electric-awd-wmimagem19234591955.jpg?s=fill&w=1920&h=1440&q=75",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230502/volvo-c40-p8-recharge-pure-electric-awd-wmimagem19234266045.jpg?s=fill&w=1920&h=1440&q=75"
+      ]
+    },
+    {
+      "id": "#1002",
+      "make": "volkswagen",
+      "model": "nivus",
+      "fmodel": "Nivus 1.0 200 TSI Total Flex Highline",
+      "year": "2021",
+      "color": "Preto",
+      "kilometers": 30994,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 119990,
+      "cost": 78980,
+      "isPromoted": true,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230422/volkswagen-nivus-1.0-200-tsi-total-flex-highline-automatico-wmimagem10360736326.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230422/volkswagen-nivus-1.0-200-tsi-total-flex-highline-automatico-wmimagem10360694248.jpg?s=fill&w=1920&h=1440&q=75",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230422/volkswagen-nivus-1.0-200-tsi-total-flex-highline-automatico-wmimagem10360777523.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1003",
+      "make": "audi",
+      "model": "q3",
+      "fmodel": "Q3 1.4 35 TFSI Black STronic",
+      "year": "2020",
+      "color": "Branco",
+      "kilometers": 41000,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina"],
+      "price": 219900,
+      "cost": 174582,
+      "isPromoted": true,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230428/audi-q3-1.4-35-tfsi-gasolina-black-s-tronic-wmimagem16382107110.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230428/audi-q3-1.4-35-tfsi-gasolina-black-s-tronic-wmimagem16382035234.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230428/audi-q3-1.4-35-tfsi-gasolina-black-s-tronic-wmimagem16382167330.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1004",
+      "make": "cherry",
+      "model": "tiggo",
+      "fmodel": "TIGGO 8 PRO 1.5 TCI Plug-in Hybrid DHT",
+      "year": "2023",
+      "color": "Preto",
+      "kilometers": 2266,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 272990,
+      "cost": 240582,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230415/caoa-chery-tiggo-8-pro-1.5-tci-plugin-hybrid-dht-wmimagem18021012251.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230415/caoa-chery-tiggo-8-pro-1.5-tci-plugin-hybrid-dht-wmimagem18021181272.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230415/caoa-chery-tiggo-8-pro-1.5-tci-plugin-hybrid-dht-wmimagem18020688827.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1005",
+      "make": "volkswagen",
+      "model": "t-cross",
+      "fmodel": "T-CROSS 1.0 200 TSI Comfortline",
+      "year": "2020",
+      "color": "Preto",
+      "kilometers": 46000,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 101900,
+      "cost": 89520,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230415/volkswagen-tcross-1.0-200-tsi-total-flex-comfortline-automatico-wmimagem1403015378.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230415/volkswagen-tcross-1.0-200-tsi-total-flex-comfortline-automatico-wmimagem14031035531.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1006",
+      "make": "audi",
+      "model": "q3",
+      "fmodel": "Q3 1.4 TSFI Black Edition STronic",
+      "year": "2019",
+      "color": "Branco",
+      "kilometers": 44000,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 167000,
+      "cost": 132580,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230420/audi-q3-1.4-tfsi-black-edition-flex-4p-s-tronic-wmimagem13242659466.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230420/audi-q3-1.4-tfsi-black-edition-flex-4p-s-tronic-wmimagem13242069929.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230420/audi-q3-1.4-tfsi-black-edition-flex-4p-s-tronic-wmimagem13243081623.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1007",
+      "make": "mitsubishi",
+      "model": "asx",
+      "fmodel": "ASX 2.0 4x2 16v",
+      "year": "2016",
+      "color": "Prata",
+      "kilometers": 107000,
+      "gearbox": "Automático",
+      "fuel": ["Gasolina"],
+      "price": 74900,
+      "cost": 52790,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230429/mitsubishi-asx-2.0-4x2-16v-gasolina-4p-automatico-wmimagem15503867891.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230429/mitsubishi-asx-2.0-4x2-16v-gasolina-4p-automatico-wmimagem15503696564.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230429/mitsubishi-asx-2.0-4x2-16v-gasolina-4p-automatico-wmimagem15504027054.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1008",
+      "make": "renault",
+      "model": "duster",
+      "fmodel": "Duster 1.6 16v SCE Zen",
+      "year": "2022",
+      "color": "Preto",
+      "kilometers": 21845,
+      "gearbox": "Manual",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 89900,
+      "cost": 72885,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202303/20230329/renault-duster-1.6-16v-sce-flex-zen-manual-wmimagem18434910638.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202303/20230329/renault-duster-1.6-16v-sce-flex-zen-manual-wmimagem1843397879.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202303/20230329/renault-duster-1.6-16v-sce-flex-zen-manual-wmimagem18434478448.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1009",
+      "make": "jeep",
+      "model": "Compass",
+      "fmodel": "COMPASS 2.0 16v Longitude 4x4",
+      "year": "2020",
+      "color": "Branco",
+      "kilometers": 37000,
+      "gearbox": "Automático",
+      "fuel": ["Diesel"],
+      "price": 149990,
+      "cost": 117842,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230406/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem1109113298.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230406/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem1109072743.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202304/20230406/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem11091523797.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    },
+    {
+      "id": "#1010",
+      "make": "nissan",
+      "model": "march",
+      "fmodel": "MARCH 1.6 Rio 16v",
+      "year": "2016",
+      "color": "Branco",
+      "kilometers": 78000,
+      "gearbox": "Manual",
+      "fuel": ["Gasolina", "Etanol"],
+      "price": 48900,
+      "cost": 32700,
+      "isPromoted": false,
+      "img": [
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202303/20230329/nissan-march-1.6-rio-2016-16v-flex-4p-manual-wmimagem20210592412.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202303/20230329/nissan-march-1.6-rio-2016-16v-flex-4p-manual-wmimagem20210647527.jpg?s=fill&w=552&h=414&q=60",
+        "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202303/20230329/nissan-march-1.6-rio-2016-16v-flex-4p-manual-wmimagem20210694935.jpg?s=fill&w=552&h=414&q=60"
+      ]
+    }
+  ]
+}

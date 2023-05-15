@@ -1,0 +1,22 @@
+.vehicle__promoted-vehicle{
+    display: flex;
+    padding: 2rem;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.promoted-vehicle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.vehicle-img{
+    display: flex;
+    background-size: cover;
+    height: 200px;
+}

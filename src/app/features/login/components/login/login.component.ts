@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CompanyService } from 'src/app/shared/services/company.service';
-import { UserService } from 'src/app/shared/services/user.service';
+import { CompanyService } from 'src/app/shared/core/async/company.service';
+import { UserService } from 'src/app/shared/core/async/user.service';
+import { Company } from 'src/app/shared/models/company.model';
+import { User } from 'src/app/shared/models/user.model';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   error: boolean = false;
+  users: User[] = [];
+  companies: Company[] = [];
 
   loginForm = new FormGroup({
     password: new FormControl('', {
@@ -33,26 +37,32 @@ export class LoginComponent {
     private companyService: CompanyService
   ) {}
 
+  ngOnInit(): void {
+    this.userService.getUser().subscribe((users) => (this.users = users));
+    this.companyService
+      .getCompany()
+      .subscribe((companies) => (this.companies = companies));
+  }
+
   getAuthenticated() {
-    const user = this.userService.getUserByUserPassCompany(
-      this.loginForm.controls.email.value.toLocaleLowerCase(),
-      this.loginForm.controls.password.value,
-      Number(this.loginForm.controls.company.value)
-    );
-    
-    console.log(user);
+    const user = this.users.filter((user) => {
+      this.loginForm.controls.email.value.toLocaleLowerCase() === user.email,
+        this.loginForm.controls.password.value === user.password;
+    });
 
-    const company = this.companyService.getCompanyById(
-      Number(this.loginForm.controls.company.value)
+    const company = this.companies.filter(
+      (company) => Number(this.loginForm.controls.company.value) === company.id
     );
 
-    console.log(company);
-
-    return user && company ? sessionStorage.setItem(
-          'authUser',
-          `${user.id}${user.email}${user.company}`
-        )
-      : (this.error = true);
+    if (user && company) {
+      sessionStorage.setItem(
+        'authUser',
+        `${user}${company}`
+      );
+      this.router.navigateByUrl('/vehicles');
+    } else {
+      this.error = true;
+    }
   }
 
   onSubmit() {

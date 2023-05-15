@@ -1,0 +1,19 @@
+<mat-form-field class="example-form-field">
+  <mat-label>Procurar</mat-label>
+  <input
+    matInput
+    color="primary"
+    type="text"
+    [formControl]="vehicleForm.controls['vehicle']"
+    placeholder="Digite o código do veículo iniciando com # ou o Modelo"
+  />
+  <button
+    *ngIf="vehicleForm.controls['vehicle']"
+    matSuffix
+    mat-icon-button
+    aria-label="Search"
+    (click)="onSearch()"
+  >
+    <mat-icon>search</mat-icon>
+  </button>
+</mat-form-field>

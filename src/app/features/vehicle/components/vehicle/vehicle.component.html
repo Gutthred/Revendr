@@ -1,0 +1,31 @@
+<h1>Veículos Disponíveis</h1>
+
+<section class="vehicle__container">
+  <section class="vehicle__promoted-vehicle">
+    <div class="promoted-vehicle" *ngFor="let pv of promotedVehicle">
+      <div class="vehicle-img">
+        <img src="{{ pv.img[0] }}" alt="" />
+      </div>
+
+      <p class="vehicle-make-model">
+        {{ pv.make | uppercase }} - {{ pv.model | uppercase }}
+      </p>
+    </div>
+  </section>
+
+  <div class="vehicle__cards">
+    <div class="seeMore-link">
+      <h3>Mais visualizados</h3>
+      <span  class="link">ver todos</span>
+    </div>
+    <div class="vehicle_card" *ngFor="let v of vehicle">
+      <div class="vehicle-card-img">
+        <img class="card-img" src="{{ v.img[0] }}" alt="vehicle img" />
+      </div>
+      <div class="vehicle__model-price">
+        <h5 class="vehicle-model">{{ v.fmodel }}</h5>
+        <span class="vehicle-price">{{ v.price | currency }}</span>
+      </div>
+    </div>
+  </div>
+</section>

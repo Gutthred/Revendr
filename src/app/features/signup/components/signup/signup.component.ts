@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CompanyService } from 'src/app/shared/services/company.service';
+import { CompanyService } from 'src/app/shared/core/async/company.service';
+import { Company } from 'src/app/shared/models/company.model';
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.scss'],
 })
-export class SignupComponent {
+export class SignupComponent implements OnInit {
   error: boolean = false;
+  company: Company[] = [];
 
   signupForm = new FormGroup({
     password: new FormControl('', {
@@ -34,24 +36,31 @@ export class SignupComponent {
     }),
   });
 
-  constructor(
-    private router: Router,
-    private companyService: CompanyService
-  ) {}
+  constructor(private router: Router, private companyService: CompanyService) {}
+
+  ngOnInit(): void {
+    this.companyService
+      .getCompany()
+      .subscribe((company) => (this.company = company));
+  }
 
   getCompanyAuth() {
-    const company = this.companyService.getCompanyById(
-      Number(this.signupForm.controls.company.value)
+    const company = this.company.filter(
+      (company) => company.id === Number(this.signupForm.controls.company.value)
     );
-    
-    
-    return company?.isActive === true
-      ? sessionStorage.setItem('authUser', JSON.stringify(company))
+
+    return company[0].isActive === true
+      ? sessionStorage.setItem('authCompany', JSON.stringify(this.company[0].isActive))
       : (this.error = true);
   }
 
   onSubmit() {
     this.getCompanyAuth();
+    if(this.error){
+      alert('Empresa informada não existe ou está desativada.');
+    } else {
+      this.router.navigateByUrl('/vehicles');
+    }
   }
 
   toLogin() {

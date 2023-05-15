@@ -4,22 +4,27 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
+const sharedComponent = [FooterComponent, HeaderComponent];
 
+const sharedModule = [
+  CommonModule,
+  MatButtonModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatButtonModule,
+  ReactiveFormsModule,
+  HttpClientModule
+];
 
 @NgModule({
-  declarations: [
-    FooterComponent,
-    HeaderComponent
-  ],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatInputModule,
-  ],
-  exports:[
-    FooterComponent,
-    HeaderComponent,
-  ]
+  declarations: [...sharedComponent],
+  imports: [...sharedModule],
+  exports: [...sharedModule, ...sharedComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
