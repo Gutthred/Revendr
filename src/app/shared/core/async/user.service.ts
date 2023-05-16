@@ -17,8 +17,8 @@ export class UserService {
     return this.httpClient.get<User[]>(this.apiPath);
   }
 
-  getUserById(user: User){
-    return this.httpClient.get<User>(`${this.apiPath}/${user.id}`)
+  getUserById(userId: number){
+    return this.httpClient.get<User>(`${this.apiPath}/${userId}`)
   }
 
   createUser(user: User){

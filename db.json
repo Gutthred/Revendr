@@ -31,7 +31,8 @@
   ],
   "vehicles": [
     {
-      "id": "#1000",
+      "id": "06688b13-9e8d-4e1b-aefc-1f38b31619d7",
+      "code": "#1000",
       "make": "bmw",
       "model": "x1",
       "fmodel": "X1 2.0 Turbo Active Flex XDRIVE25i Sport 4",
@@ -50,7 +51,8 @@
       ]
     },
     {
-      "id": "#1001",
+      "id": "de656de3-4967-4a2f-b445-16d27abb7e71",
+      "code": "#1001",
       "make": "volvo",
       "model": "c40",
       "fmodel": "C40 P8 Recharge Pure Eletric AWD",
@@ -68,7 +70,8 @@
       ]
     },
     {
-      "id": "#1002",
+      "id": "635c5e56-2f27-43d8-a597-c137825feacd",
+      "code": "#1002",
       "make": "volkswagen",
       "model": "nivus",
       "fmodel": "Nivus 1.0 200 TSI Total Flex Highline",
@@ -87,7 +90,8 @@
       ]
     },
     {
-      "id": "#1003",
+      "id": "1d76650f-281c-4994-a075-d747174c4f9a",
+      "code": "#1003",
       "make": "audi",
       "model": "q3",
       "fmodel": "Q3 1.4 35 TFSI Black STronic",
@@ -106,7 +110,8 @@
       ]
     },
     {
-      "id": "#1004",
+      "id": "10283630-9f04-451e-8ec6-e96927d26e0f",
+      "code": "#1004",
       "make": "cherry",
       "model": "tiggo",
       "fmodel": "TIGGO 8 PRO 1.5 TCI Plug-in Hybrid DHT",
@@ -125,7 +130,8 @@
       ]
     },
     {
-      "id": "#1005",
+      "id": "c9b5adac-04fb-4925-9054-48f014e6ec20",
+      "code": "#1005",
       "make": "volkswagen",
       "model": "t-cross",
       "fmodel": "T-CROSS 1.0 200 TSI Comfortline",
@@ -143,7 +149,8 @@
       ]
     },
     {
-      "id": "#1006",
+      "id": "4844bd22-0866-48b6-a77a-1e85c8cd3a92",
+      "code": "#1006",
       "make": "audi",
       "model": "q3",
       "fmodel": "Q3 1.4 TSFI Black Edition STronic",
@@ -162,7 +169,8 @@
       ]
     },
     {
-      "id": "#1007",
+      "id": "9222e54c-708d-441b-838e-8c8d92e7640b",
+      "code": "#1007",
       "make": "mitsubishi",
       "model": "asx",
       "fmodel": "ASX 2.0 4x2 16v",
@@ -181,7 +189,8 @@
       ]
     },
     {
-      "id": "#1008",
+      "id": "32d53412-8439-47cf-bdca-280a7d6c7b73",
+      "code": "#1008",
       "make": "renault",
       "model": "duster",
       "fmodel": "Duster 1.6 16v SCE Zen",
@@ -200,7 +209,8 @@
       ]
     },
     {
-      "id": "#1009",
+      "id": "7eb4bd68-cfa5-49ad-8e2e-14ee9a4e3d77",
+      "code": "#1009",
       "make": "jeep",
       "model": "Compass",
       "fmodel": "COMPASS 2.0 16v Longitude 4x4",
@@ -219,7 +229,8 @@
       ]
     },
     {
-      "id": "#1010",
+      "id": "d572f98a-0cfd-415d-b7d3-004618f7d45c",
+      "code": "#1010",
       "make": "nissan",
       "model": "march",
       "fmodel": "MARCH 1.6 Rio 16v",

@@ -45,12 +45,12 @@ export class SignupComponent implements OnInit {
   }
 
   getCompanyAuth() {
-    const company = this.company.filter(
+    const company = this.company.find(
       (company) => company.id === Number(this.signupForm.controls.company.value)
     );
 
-    return company[0].isActive === true
-      ? sessionStorage.setItem('authCompany', JSON.stringify(this.company[0].isActive))
+    return company!.isActive === true
+      ? sessionStorage.setItem('authCompany', JSON.stringify(company!))
       : (this.error = true);
   }
 

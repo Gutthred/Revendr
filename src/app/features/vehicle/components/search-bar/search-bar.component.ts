@@ -43,7 +43,7 @@ export class SearchBarComponent implements OnInit {
 
   getVehicleByIdModel(x: string) {
     return x.startsWith('#')
-      ? this.vehicle.find((vehicle) => vehicle.id === x)
+      ? this.vehicle.find((vehicle) => vehicle.code === x)
       : this.vehicle.filter((vehicle) => vehicle.model === x);
   }
 }

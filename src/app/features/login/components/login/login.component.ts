@@ -45,19 +45,19 @@ export class LoginComponent implements OnInit {
   }
 
   getAuthenticated() {
-    const user = this.users.filter((user) => {
+    const user = this.users.find((user) => {
       this.loginForm.controls.email.value.toLocaleLowerCase() === user.email,
         this.loginForm.controls.password.value === user.password;
     });
 
-    const company = this.companies.filter(
+    const company = this.companies.find(
       (company) => Number(this.loginForm.controls.company.value) === company.id
     );
 
     if (user && company) {
       sessionStorage.setItem(
         'authUser',
-        `${user}${company}`
+        `${user.id}${company.id}`
       );
       this.router.navigateByUrl('/vehicles');
     } else {

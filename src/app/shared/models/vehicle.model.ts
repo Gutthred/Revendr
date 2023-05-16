@@ -1,5 +1,6 @@
 export interface Vehicle{
     id: string | null;
+    code: string | null;
     make: string | null;
     model: string | null;
     fmodel: string | null;
@@ -12,4 +13,11 @@ export interface Vehicle{
     cost: number | null;
     isPromoted: boolean | null;
     img: string[],
+    sold?: boolean | null;
+}
+
+export interface vehicleFilter {
+    model: string | null;
+    id: string | null;
+    
 }
